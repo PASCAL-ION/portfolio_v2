@@ -1,35 +1,37 @@
-import { motion } from "framer-motion";
-import { useState } from "react";
-
 export function TextCaroussel({ wordArray, direction }) {
-  const [isHovered, setIsHovered] = useState(false);
-  let i = 0;
+  let animationClass = "";
+
+  if (direction === "up") {
+    animationClass = "animate-scroll-up";
+  } else if (direction === "down") {
+    animationClass = "animate-scroll-down";
+  } else if (direction === "right") {
+    animationClass = "animate-scroll-right";
+  } else if (direction === "left") {
+    animationClass = "animate-scroll-left";
+  }
+
+  const isVertical = direction === "up" || direction === "down";
+  const flexDirection = isVertical ? "flex-col" : "flex-row";
 
   return (
-    <motion.div
-      className={`flex flex-col grow h-screen overflow-hidden relative transition-all duration-500 
-      ${isHovered ? "bg-slate-100" : "bg-stone-900"}`}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+    <div
+      className={`flex flex-col grow md:h-screen h-30vh overflow-hidden transition-all duration-500 bg-stone-900 hover:bg-slate-100`}
     >
-      <motion.div
-        className={`flex flex-col relative z-10 border-solid border-0 border-l border-white ${
-          direction === "up" ? "animate-scroll-up" : "animate-scroll-down"
-        }`}
-        whileHover={{
-          cursor: "pointer",
-        }}
+      <div
+        className={`flex ${flexDirection} 
+          border-l border-b border-white text-white hover:text-black cursor-pointer
+          ${animationClass}`}
       >
-        {[...wordArray, ...wordArray].map((letter) => (
+        {[...wordArray, ...wordArray].map((letter, index) => (
           <p
-            key={`${letter}${i++}`}
-            className={`text-7xl font-opensans px-5 py-2 w-full text-center tracking-wider transition-colors duration-300 
-            ${isHovered ? "text-black" : "text-white"}`}
+            key={`${letter}-${index}`}
+            className="text-7xl font-opensans px-5 py-2 w-full text-center tracking-wider transition-colors duration-300"
           >
             {letter}
           </p>
         ))}
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   );
 }

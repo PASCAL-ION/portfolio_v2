@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+import { backgrounds } from './src/plugins/backgrounds.js';
 export default {
   content: [
     "./index.html",
@@ -6,9 +7,9 @@ export default {
   ],
   theme: {
     extend: {
-      cursor: {
-        proImage: "url(./src/assets/pro-cursor.jpg) -30 120, auto",
-        persoImage: "url(./src/assets/perso-cursor.jpg) -30 120, auto",
+      backgroundImage: {
+        imgPro: "url('./src/assets/imgPro.jpeg')",
+        imgPerso: "url('./src/assets/imgPerso.jpg')",
       },
       fontFamily: {
         openSans: ['"Open Sans"', 'sans-serif'],
@@ -23,10 +24,20 @@ export default {
           '0%': { transform: 'translateY(-50%)' },
           '100%': { transform: 'translateY(0)' },
         },
+        'infinite-scroll-right': {
+          '0%': { transform: 'translateX(-50%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+        'infinite-scroll-left': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
       },
       animation: {
         'scroll-up': 'infinite-scroll-up 7s linear infinite',
         'scroll-down': 'infinite-scroll-down 7s linear infinite',
+        'scroll-right': 'infinite-scroll-right 7s linear infinite',
+        'scroll-left': 'infinite-scroll-left 7s linear infinite',
       },
     },
   },

@@ -18,42 +18,10 @@
   .textStroke{
     -webkit-text-stroke: 2px white;
   }
-
-  .link-ion{
-    @apply cursor-persoImage;
-  }
-  .link-pascal{
-    @apply cursor-proImage;
-  }
   
   .link-style {
-    @apply relative text-9xl font-openSans font-extrabold cursor-pointer text-[#ff000000] textStroke transition-all;
+    @apply text-9xl font-openSans font-extrabold cursor-pointer text-[#ffffff00] textStroke transition-all hover:text-white;
   }
-  
-  .link-ion::before {
-    content: none; /* masqué au départ */
-  }
-  
-  .link-ion:hover::before {
-    content: attr(data-text);
-    position: absolute;
-    top: var(--mouseIon-y);
-    left: var(--mouseIon-x);
-    color: white;
-  }
-  
-  .link-pascal::before {
-    content: none;
-  }
-  
-  .link-pascal:hover::before {
-    content: attr(data-text);
-    position: absolute;
-    top: var(--mousePascal-y);
-    left: var(--mousePascal-x);
-    color: white;
-  }
-  
   
   @keyframes shine {
     from {
