@@ -20,7 +20,7 @@
   }
   
   .link-style {
-    @apply text-5xl md:text-9xl font-openSans font-extrabold cursor-pointer text-[#ffffff00] textStroke transition-all hover:text-white;
+    @apply text-7xl md:text-9xl font-openSans font-extrabold cursor-pointer text-[#ffffff00] textStroke transition-all hover:text-white;
   }
   
   @keyframes shine {
