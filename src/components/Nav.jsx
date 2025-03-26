@@ -28,8 +28,8 @@ export function Nav() {
 
   return (
     <nav className="flex flex-col md:flex-row h-30vh md:h-screen w-full md:w-[25%]">
-      <TextCaroussel wordArray={projectsWordArray} direction={projectsDirection} />
-      <TextCaroussel wordArray={contactWordArray} direction={contactDirection} />
+        <TextCaroussel wordArray={projectsWordArray} direction={projectsDirection} linkTo="projects"/>
+        <TextCaroussel wordArray={contactWordArray} direction={contactDirection} linkTo="contact"/>
     </nav>
   );
 }
