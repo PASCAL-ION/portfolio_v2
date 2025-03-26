@@ -6,16 +6,18 @@ export function Layout({ children, background }) {
     <div className={`
       ${background} text-stone-200
       transition-all duration-500
-      h-screen w-screen
+      min-h-screen min-w-screen
       flex flex-col-reverse md:flex-row
-      items-center md:justify-center justify-end
+      items-center md:justify-center md:items-start justify-end
       overflow-hidden
     `}>
       <div className="
-        flex
-        w-full md:w-[65%]
-        h-full
-        items-center
+        flex flex-col items-stretch
+        w-full md:w-[75%]
+        h-screen
+        overflow-y-auto
+        pt-5
+        no-scrollbar
       ">
         {children}
       </div>

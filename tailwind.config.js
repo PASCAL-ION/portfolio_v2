@@ -8,8 +8,9 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        imgPro: "url('./src/assets/imgPro.jpeg')",
+        imgPro: "url('./src/assets/imgPro.jpg')",
         imgPerso: "url('./src/assets/imgPerso.jpg')",
+        imgProjets: "url('./src/assets/imgProjets.jpg')",
       },
       fontFamily: {
         openSans: ['"Open Sans"', 'sans-serif'],
