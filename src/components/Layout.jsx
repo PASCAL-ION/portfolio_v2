@@ -14,9 +14,8 @@ export function Layout({ children, background }) {
       <div className="
         flex flex-col items-stretch
         w-full md:w-[75%]
-        h-screen
+        md:min-h-screen flex-1
         overflow-y-auto
-        pt-5
         no-scrollbar
       ">
         {children}

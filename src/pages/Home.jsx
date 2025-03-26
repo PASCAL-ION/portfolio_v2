@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export function Home({setBackground}) {
   return (
-    <div className="flex items-start justify-center flex-col gap-8 w-full h-full">
+    <div className="flex flex-col items-start justify-center gap-8 w-full flex-1">
       <div
         className="md:ml-[15%] ml-[15px] group link-style"
         onMouseEnter={() => setBackground("bg-imgPerso bg-center bg-center")}
