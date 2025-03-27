@@ -1,0 +1,98 @@
+[
+    {
+        "finished" : true,
+        "id": "1",
+        "name": "twitter",
+        "images": {
+            "img1": "./assets/twitter/home.png",
+            "img2": "",
+            "img3": ""
+        },
+        "description": "Projet de groupe pour reproduire twitter",
+        "stack": {
+            "techno1": "",
+            "techno2": "",
+            "techno3": ""
+        }
+    },
+    {
+        "finished" : true,
+        "id": "2",
+        "name": "meetic",
+        "images": {
+            "img1": "",
+            "img2": "",
+            "img3": ""
+        },
+        "description": "Projet de groupe pour reproduire meetic",
+        "stack": {
+            "techno1": "",
+            "techno2": "",
+            "techno3": ""
+        }
+    }, 
+    {
+        "finished" : false,
+        "id": "3",
+        "name" : "spotify",
+        "images": {
+            "img1": "",
+            "img2": "",
+            "img3": ""
+        },
+        "description": "Projet de groupe pour reproduire spotify",
+        "stack": {
+            "techno1": "",
+            "techno2": "",
+            "techno3": ""
+        }
+    },
+    {
+        "finished" : false,
+        "id": "3",
+        "name" : "canap",
+        "images": {
+            "img1": "",
+            "img2": "",
+            "img3": ""
+        },
+        "description": "Travailler avec une api pour rendre dynamique un site web de e-commerce",
+        "stack": {
+            "techno1": "",
+            "techno2": "",
+            "techno3": ""
+        }
+    },
+    {
+        "finished" : false,
+        "id": "3",
+        "name" : "canap",
+        "images": {
+            "img1": "",
+            "img2": "",
+            "img3": ""
+        },
+        "description": "Travailler avec une api pour rendre dynamique un site web de e-commerce",
+        "stack": {
+            "techno1": "",
+            "techno2": "",
+            "techno3": ""
+        }
+    },
+    {
+        "finished" : false,
+        "id": "3",
+        "name" : "canap",
+        "images": {
+            "img1": "",
+            "img2": "",
+            "img3": ""
+        },
+        "description": "Travailler avec une api pour rendre dynamique un site web de e-commerce",
+        "stack": {
+            "techno1": "",
+            "techno2": "",
+            "techno3": ""
+        }
+    }
+]

@@ -27,7 +27,7 @@ export function Nav() {
   }, []);
 
   return (
-    <nav className="flex flex-col md:flex-row h-30vh md:h-screen w-full md:w-[25%]">
+    <nav className="flex flex-col md:flex-row h-30vh w-full md:w-[25%] md:h-screen md:sticky md:top-0">
         <TextCaroussel wordArray={projectsWordArray} direction={projectsDirection} linkTo="projects"/>
         <TextCaroussel wordArray={contactWordArray} direction={contactDirection} linkTo="contact"/>
     </nav>
