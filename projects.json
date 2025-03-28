@@ -2,97 +2,190 @@
     {
         "finished" : true,
         "id": "1",
-        "name": "twitter",
-        "images": {
-            "img1": "./assets/twitter/home.png",
-            "img2": "",
-            "img3": ""
+        "name": "Clone de X",
+        "shortDescription": "Dans ce projet de groupe nous avons reproduit le reseau social X",
+        "description": "Lors de ce projet d'une durée d'un mois, nous avons développé en équipe de quatre personnes une application web inspirée de X, permettant aux utilisateurs de publier des tweets, de suivre d'autres utilisateurs et d'interagir via des likes et des commentaires.",
+        "category": "top",
+        "links": {
+            "github": "",
+            "live": ""
         },
-        "description": "Projet de groupe pour reproduire twitter",
-        "stack": {
-            "techno1": "",
-            "techno2": "",
-            "techno3": ""
+        "stack": [
+            "Php",
+            "Javascript",
+            "Ajax",
+            "Tailwind",
+            "Mysql",
+            "Sql",
+            "Trello"
+        ],
+        "images": {
+            "img1": {
+                "src" : "/assets/twitter/home.png",
+                "alt" : ""
+            },
+            "img2": {
+                "src" : "/assets/spotify/home.png",
+                "alt" : ""
+            },
+            "img3": {
+                "src" : "/assets/meetic/home.png",
+                "alt" : ""
+            }
         }
     },
     {
         "finished" : true,
         "id": "2",
-        "name": "meetic",
-        "images": {
-            "img1": "",
-            "img2": "",
-            "img3": ""
-        },
+        "name": "Meetic",
         "description": "Projet de groupe pour reproduire meetic",
-        "stack": {
-            "techno1": "",
-            "techno2": "",
-            "techno3": ""
+        "category": "top",
+        "links": {
+            "github": "",
+            "live": ""
+        },
+        "stack": [
+            "test",
+            "test",
+            "test"
+        ],
+        "images": {
+            "img1": {
+                "src" : "/assets/meetic/home.png",
+                "alt" : ""
+            },
+            "img2": {
+                "src" : "/assets/meetic/home.png",
+                "alt" : ""
+            },
+            "img3": {
+                "src" : "/assets/meetic/home.png",
+                "alt" : ""
+            }
         }
-    }, 
+    },
     {
         "finished" : false,
         "id": "3",
-        "name" : "spotify",
-        "images": {
-            "img1": "",
-            "img2": "",
-            "img3": ""
-        },
+        "name" : "Spotify",
         "description": "Projet de groupe pour reproduire spotify",
-        "stack": {
-            "techno1": "",
-            "techno2": "",
-            "techno3": ""
+        "alt": "image projet clone spotify",
+        "category": "top",
+        "links": {
+            "github": "",
+            "live": ""
+        },
+        "stack": [
+            "test",
+            "test",
+            "test"
+        ],
+        "images": {
+            "img1": {
+                "src" : "/assets/spotify/home.png",
+                "alt" : ""
+            },
+            "img2": {
+                "src" : "/assets/spotify/home.png",
+                "alt" : ""
+            },
+            "img3": {
+                "src" : "/assets/spotify/home.png",
+                "alt" : ""
+            }
+        }
+    },
+    {
+        "finished" : true,
+        "id": "4",
+        "name" : "Kanap",
+        "alt": "image projet Kanap",
+        "category": "top",
+        "description": "Travailler avec une api pour rendre dynamique un site web de e-commerce",
+        "links": {
+            "github": "",
+            "live": ""
+        },
+        "stack": [
+            "test",
+            "test",
+            "test"
+        ],
+        "images": {
+            "img1": {
+                "src" : "/assets/kanap/home.png",
+                "alt" : ""
+            },
+            "img2": {
+                "src" : "/assets/kanap/home.png",
+                "alt" : ""
+            },
+            "img3": {
+                "src" : "/assets/kanap/home.png",
+                "alt" : ""
+            }
         }
     },
     {
         "finished" : false,
-        "id": "3",
-        "name" : "canap",
-        "images": {
-            "img1": "",
-            "img2": "",
-            "img3": ""
-        },
+        "id": "5",
+        "name" : "Piquante",
+        "alt": "image projet clone spotify",
+        "category": "top",
         "description": "Travailler avec une api pour rendre dynamique un site web de e-commerce",
-        "stack": {
-            "techno1": "",
-            "techno2": "",
-            "techno3": ""
+        "links": {
+            "github": "",
+            "live": ""
+        },
+        "stack": [
+            "test",
+            "test",
+            "test"
+        ],
+        "images": {
+            "img1": {
+                "src" : "/assets/piquante/home.png",
+                "alt" : ""
+            },
+            "img2": {
+                "src" : "/assets/piquante/home.png",
+                "alt" : ""
+            },
+            "img3": {
+                "src" : "/assets/piquante/home.png",
+                "alt" : ""
+            }
         }
     },
     {
-        "finished" : false,
-        "id": "3",
-        "name" : "canap",
-        "images": {
-            "img1": "",
-            "img2": "",
-            "img3": ""
-        },
+        "finished" : true,
+        "id": "6",
+        "name" : "Kasa",
+        "alt": "image projet clone spotify",
+        "category": "top",
         "description": "Travailler avec une api pour rendre dynamique un site web de e-commerce",
-        "stack": {
-            "techno1": "",
-            "techno2": "",
-            "techno3": ""
-        }
-    },
-    {
-        "finished" : false,
-        "id": "3",
-        "name" : "canap",
-        "images": {
-            "img1": "",
-            "img2": "",
-            "img3": ""
+        "links": {
+            "github": "",
+            "live": ""
         },
-        "description": "Travailler avec une api pour rendre dynamique un site web de e-commerce",
-        "stack": {
-            "techno1": "",
-            "techno2": "",
-            "techno3": ""
+        "stack": [
+            "test",
+            "test",
+            "test"
+        ],
+        "images": {
+            "img1": {
+                "src" : "/assets/kasa/home.png",
+                "alt" : ""
+            },
+            "img2": {
+                "src" : "/assets/kasa/home.png",
+                "alt" : ""
+            },
+            "img3": {
+                "src" : "/assets/kasa/home.png",
+                "alt" : ""
+            }
         }
     }
 ]
