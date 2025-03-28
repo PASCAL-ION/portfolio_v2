@@ -1,9 +1,15 @@
-export function Card({projectDetails}) {
+import { Link } from "react-router-dom";
+import { motion } from "motion/react";
+
+export function Card({ projectDetails }) {
   return (
-    <div className="h-auto flex flex-col gap-3">
-        <img src={projectDetails.images.img1} alt="image d'accueil projet twitter"/>
-        <div className="text-lg">{projectDetails.name}</div>
-        <div>{projectDetails.description}</div>
-    </div>
-  )
+    <Link to={`/projects/${projectDetails.id}`} className="flex flex-col gap-2 overflow-hidden">
+      <motion.img 
+        src={projectDetails.images.img1.src} 
+        alt={projectDetails.images.img1.alt} 
+        className={`flex-1 object-cover transition-all duration-300 hover:scale-110`}
+      />
+      <div className="text-base">{projectDetails.name}</div>
+    </Link>
+  );
 }

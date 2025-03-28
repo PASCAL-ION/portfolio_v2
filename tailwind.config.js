@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-import { backgrounds } from './src/plugins/backgrounds.js';
 export default {
   content: [
     "./index.html",
@@ -7,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundSize: {
+        '50%': '50%'
+      },
       backgroundImage: {
         imgPro: "url('/assets/imgPro.jpg')",
         imgPerso: "url('/assets/imgPerso.jpg')",
@@ -33,12 +35,17 @@ export default {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-50%)' },
         },
+        'zoom-out': {
+          '0%': { backgroundImage: "bg-stone-900" },
+          '100%': { backgroundImage: "url('/assets/imgPro.jpg')" },
+        },
       },
       animation: {
         'scroll-up': 'infinite-scroll-up 7s linear infinite',
         'scroll-down': 'infinite-scroll-down 7s linear infinite',
         'scroll-right': 'infinite-scroll-right 7s linear infinite',
         'scroll-left': 'infinite-scroll-left 7s linear infinite',
+        'zoom-out': 'zoom-out 0.5s ease-in-out forwards'
       },
     },
   },

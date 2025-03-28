@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* slick carousel styles */
+@import "node_modules/slick-carousel/slick/slick.css";
+@import "node_modules/slick-carousel/slick/slick-theme.css";
 
 @tailwind base;
 @tailwind components;
@@ -11,6 +14,7 @@
   }
   :root{
     --mouseIon-y: 50px;
+    @apply no-scrollbar;
   }
 }
 
@@ -40,17 +44,6 @@
   .no-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
-  }
-
-  .bg-zoom {
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: background-size 0.5s ease;
-  }
-
-  .bg-zoom-hover:hover {
-    background-size: 120%;
   }
 
   .word-spacing-relaxed {
