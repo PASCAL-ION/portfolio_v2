@@ -18,9 +18,12 @@ export function Layout({ children, background }) {
         md:min-h-screen flex-1
         overflow-y-auto
         no-scrollbar
+        relative
       ">
-        <div className="flex px-5 py-6 items-center justify-between">
-          <Link to="/">Logo</Link>
+        <div className="flex px-5 py-6 items-center justify-between md:absolute md:top-0 md:left-0 md:w-full">
+          <Link to="/">
+            <img src="/assets/logo.png" alt="logo" className="h-[50px]"/>
+          </Link>
           <div className="flex gap-3">
             <Link>
               <FontAwesomeIcon icon={faGithub} className="text-3xl"/>

@@ -18,7 +18,7 @@ export function TextCaroussel({ wordArray, direction, linkTo }) {
 
   return (
     <div
-        className={`flex flex-col grow md:h-screen h-30vh overflow-hidden transition-all duration-500 bg-stone-900 hover:bg-slate-100`}
+        className={`flex flex-col grow md:h-screen overflow-hidden transition-all duration-500 bg-[#0c0c0c87] hover:bg-slate-100`}
       >
       <Link to={linkTo}>
         <div
@@ -29,7 +29,7 @@ export function TextCaroussel({ wordArray, direction, linkTo }) {
           {[...wordArray, ...wordArray].map((letter, index) => (
             <p
               key={`${letter}-${index}`}
-              className="text-7xl font-opensans px-5 py-2 w-full text-center tracking-wider transition-colors duration-300"
+              className="text-3xl font-opensans px-3 py-2 w-full text-center tracking-wider transition-colors duration-300"
             >
               {letter}
             </p>

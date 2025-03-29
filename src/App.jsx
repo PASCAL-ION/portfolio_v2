@@ -20,7 +20,7 @@ function App() {
   useEffect(() => {
     const hasVisited = localStorage.getItem("hasVisited");
 
-    if (!hasVisited) {
+    if (hasVisited) {
       setLoading(true);
       setTimeout(() => {
         setLoading(false);
