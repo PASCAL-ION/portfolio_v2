@@ -18,23 +18,23 @@ export function Layout({ children, background }) {
         md:min-h-screen flex-1
         overflow-y-auto
         no-scrollbar
+        justify-items-start
         relative
       ">
-        <div className="flex px-5 py-6 items-center justify-between md:absolute md:top-0 md:left-0 md:w-full">
+        <div className="flex px-5 py-6 items-center justify-between">
           <Link to="/">
-            <img src="/assets/logo.png" alt="logo" className="h-[50px]"/>
+            <img src="/assets/logo.png" alt="logo" className="md:h-[50px] h-[40px]"/>
           </Link>
           <div className="flex gap-3">
             <Link>
-              <FontAwesomeIcon icon={faGithub} className="text-3xl"/>
+              <FontAwesomeIcon icon={faGithub} className="md:text-3xl text-2xl"/>
             </Link>
             <Link>
-              <FontAwesomeIcon icon={faLinkedin} className="text-3xl"/>
+              <FontAwesomeIcon icon={faLinkedin} className="md:text-3xl text-2xl"/>
             </Link>
           </div>
         </div>
         {children}
-        {/* <div className="italic text-xs">© 2025 | Pascal Ion | Paris</div> */}
       </div>
       <Nav />
     </div>

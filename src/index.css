@@ -14,6 +14,7 @@
   }
   :root{
     --mouseIon-y: 50px;
+    background: #0C0C0C;
     @apply no-scrollbar;
   }
 }

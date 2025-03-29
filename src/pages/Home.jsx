@@ -6,7 +6,7 @@ export function Home({ setBackground }) {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <motion.div className="flex flex-col items-start justify-center gap-8 w-full flex-1 transition-all duration-500">
+    <motion.div className="flex flex-col items-start justify-center gap-8 w-full md:flex-1 md:mt-0 mt-20 transition-all duration-500">
       <div
         className="md:ml-[20%] ml-[15px] group link-style md:mb-5"
         onMouseEnter={() => {
