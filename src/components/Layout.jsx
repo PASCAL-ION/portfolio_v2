@@ -2,6 +2,7 @@ import React from "react";
 import { Nav } from "../components/Nav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 export function Layout({ children, background }) {
@@ -34,23 +35,17 @@ export function Layout({ children, background }) {
             />
           </Link>
           <div className="flex gap-3">
-            <a
-              href="https://github.com/PASCAL-ION"
-              target="_blank"
-            >
-              <FontAwesomeIcon
-                icon={faGithub}
-                className="md:text-3xl text-2xl"
-              />
+            <a href="https://github.com/ionpascal" target="_blank">
+              <FontAwesomeIcon icon={faGithub} className="md:text-3xl text-2xl"/>
             </a>
-            <a
-              href="https://www.linkedin.com/in/ionpascal"
-              target="_blank"
-            >
-              <FontAwesomeIcon
-                icon={faLinkedin}
-                className="md:text-3xl text-2xl"
-              />
+
+            <a href="https://www.linkedin.com/in/ionpascal" target="_blank">
+              <FontAwesomeIcon icon={faLinkedin} className="md:text-3xl text-2xl"/>
+            </a>
+
+            <a href="/assets/CV.pdf" download="CV.pdf" className="flex flex-col gap-1 items-center">
+              <FontAwesomeIcon icon={faFilePdf} className="md:text-3xl text-2xl"/>
+              <span className="text-xs">Téléchargez mon CV</span>
             </a>
           </div>
         </div>
