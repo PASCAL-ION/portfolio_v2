@@ -3,12 +3,7 @@ import { motion } from "framer-motion";
 
 export function Contact() {
   return (
-    <div className="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-12 text-white bg-stone-900 relative">
-      <div className="absolute left-6 top-1/4 hidden md:block">
-        <div className="w-2 h-40 bg-white rounded-full"></div>
-        <div className="w-3 h-3 bg-white rounded-full mt-4 animate-bounce"></div>
-      </div>
-      
+    <div className="flex flex-col gap-10 items-center justify-center px-6 md:px-12">
       <motion.h1 
         className="text-5xl md:text-7xl font-bold mb-12 md:mr-16"
         initial={{ opacity: 0, y: -20 }}

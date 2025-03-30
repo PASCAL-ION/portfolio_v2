@@ -25,7 +25,7 @@
   }
   .bg-hover {
     background-size: 120%; /* Taille initiale */
-    background-position: center;
+    background-position: 10% 80%;
     background-repeat: no-repeat;
     transition: background-size 0.6s ease-in-out;
   }

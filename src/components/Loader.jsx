@@ -5,7 +5,7 @@ export function Loader() {
   return (
     <AnimatePresence>
       <motion.div
-        className="fixed inset-0 flex items-center justify-center bg-black z-50"
+        className="fixed inset-0 flex items-center justify-center bg-black z-[99999]"
         initial={{ opacity: 1 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}

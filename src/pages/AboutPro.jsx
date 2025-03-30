@@ -32,7 +32,7 @@ export function AboutPro() {
       <div className="w-full flex flex-col md:flex-row justify-center items-center gap-10">
         <div className="w-1/2">
           <img
-            src="/assets/mePro.jpg"
+            src="/assets/mePro.jpeg"
             alt="Photo professionnelle"
             className="w-full rounded-lg shadow"
           />
