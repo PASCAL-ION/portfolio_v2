@@ -10,7 +10,7 @@ export default {
         '50%': '50%'
       },
       backgroundImage: {
-        imgPro: "url('/assets/imgPro.jpg')",
+        imgPro: "url('/assets/imgPro.jpeg')",
         imgPerso: "url('/assets/imgPerso.jpg')",
         imgProjets: "url('/assets/imgProjets.jpg')",
       },

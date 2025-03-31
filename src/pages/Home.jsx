@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { useState } from "react";
 
 export function Home({ setBackground }) {
 
@@ -29,8 +28,8 @@ export function Home({ setBackground }) {
       <div
         className="md:ml-[35%] ml-[15px] group link-style"
         onMouseEnter={() => {
-          setBackground("bg-imgPro bg-hover bg-hover-animated");
-        }}
+          setBackground("bg-imgPro bg-hover bg-hover-animated bg-imgPro-high");
+        }}        
         onMouseLeave={() => {
           setBackground("bg-[#0C0C0C]");
         }}

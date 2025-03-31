@@ -23,6 +23,11 @@
   .textStroke{
     -webkit-text-stroke: 2px white;
   }
+  .bg-imgPro-high {
+    background-position: center center !important;
+    filter: brightness(.5);
+  }
+  
   .bg-hover {
     background-size: 120%; 
     background-position: 10% 80%;
