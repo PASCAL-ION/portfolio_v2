@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import { Link } from "react-router-dom";
 
 export function AboutPro() {
   const webPath = [
@@ -28,7 +31,7 @@ export function AboutPro() {
   };
 
   return (
-    <div className="w-full h-full flex flex-col items-center gap-10 p-10">
+    <div className="w-full h-full flex flex-col gap-10 p-10">
       <div className="w-full flex flex-col md:flex-row justify-center items-center gap-10">
         <div className="w-1/2">
           <img
@@ -60,7 +63,7 @@ export function AboutPro() {
         </div>
       </div>
 
-      <div className="w-3/4 text-center mt-10">
+      <div className="w-3/4 text-center w-full mt-10">
         <h2 className="text-3xl font-bold">À propos de moi</h2>
         <p className="text-lg mt-4">
           Passionné par le développement web, je suis une personne curieuse et
@@ -126,6 +129,13 @@ export function AboutPro() {
             ))}
           </motion.div>
       </div>
+      <Link
+        to="/"
+        className="flex items-center gap-2 italic font-semibold p-5"
+      >
+        <FontAwesomeIcon icon={faArrowLeft} />
+        Retour
+      </Link>
     </div>
   );
 }

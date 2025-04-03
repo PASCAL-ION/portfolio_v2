@@ -1,4 +1,3 @@
-import React from "react";
 import { Nav } from "../components/Nav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -35,20 +34,25 @@ export function Layout({ children, background }) {
             />
           </Link>
           <div className="flex gap-3">
-            <a href="https://github.com/ionpascal" target="_blank">
-              <FontAwesomeIcon icon={faGithub} className="md:text-3xl text-2xl"/>
+            <a href="https://github.com/PASCAL-ION" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faGithub} className="md:text-3xl text-2xl" />
             </a>
 
-            <a href="https://www.linkedin.com/in/ionpascal" target="_blank">
-              <FontAwesomeIcon icon={faLinkedin} className="md:text-3xl text-2xl"/>
+            <a href="https://www.linkedin.com/in/ionpascal" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faLinkedin} className="md:text-3xl text-2xl" />
             </a>
 
-            <a href="/assets/CV.pdf" download="CV.pdf" className="flex flex-col gap-1 items-center">
-              <FontAwesomeIcon icon={faFilePdf} className="md:text-3xl text-2xl"/>
-              <span className="text-xs">Téléchargez mon CV</span>
-            </a>
+            {/* CV Preview Button */}
+            <button
+              onClick={() => window.open('/assets/CV.pdf', '_blank')}
+              className="flex flex-col gap-1 items-center"
+            >
+              <FontAwesomeIcon icon={faFilePdf} className="md:text-3xl text-2xl" />
+              <span className="text-xs">Voir mon CV</span>
+            </button>
           </div>
         </div>
+        {children}
         {children}
       </div>
       <Nav />

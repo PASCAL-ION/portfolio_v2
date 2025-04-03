@@ -27,7 +27,7 @@ export function TextCaroussel({ wordArray, direction, linkTo }) {
           {[...wordArray, ...wordArray].map((letter, index) => (
             <p
               key={`${letter}-${index}`}
-              className="text-3xl md:text-7xl font-opensans px-5 py-2 w-full text-center tracking-wider transition-colors duration-300"
+              className="text-3xl md:text-7xl font-opensans md:px-5 px-3 py-2 w-full text-center tracking-wider transition-colors duration-300"
             >
               {letter}
             </p>

@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
-import { AnimatePresence, motion } from "framer-motion"; // Import Framer Motion
+import { AnimatePresence, motion } from "framer-motion";
 
 export function Projects() {
   const [data, setData] = useState([]);
@@ -16,16 +16,15 @@ export function Projects() {
   }, []);
 
   return (
-    <div className="flex-1 flex flex-col items-center min-h-screen py-12">
-      <div className="text-center max-w-4xl mx-auto mb-8 px-6">
-        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight">
+    <div className="flex-1 flex flex-col items-center min-h-screen py-12 px-4 sm:px-6">
+      <div className="text-center max-w-4xl mx-auto mb-8">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight">
           Mes Projets
         </h1>
       </div>
 
-      <Box className="p-6 mb-8 mt-8">
+      <Box className="w-full overflow-x-auto p-4 mb-8 flex justify-center">
         <Tabs
-          centered
           value={tabIndex}
           onChange={(e, newValue) => setTabIndex(newValue)}
           TabIndicatorProps={{
@@ -35,6 +34,8 @@ export function Projects() {
               borderRadius: "2px",
             },
           }}
+          variant="scrollable"
+          scrollButtons="auto"
         >
           {["Tous les projets", "Top-projets", "Mini-projets"].map((label, index) => (
             <Tab
@@ -46,6 +47,8 @@ export function Projects() {
                 transition: "all 0.3s ease",
                 "&.Mui-selected": { color: "black" },
                 "&:hover": { backgroundColor: "white", color: "black" },
+                minWidth: "auto",
+                padding: "6px 12px",
               }}
             />
           ))}
@@ -60,7 +63,7 @@ export function Projects() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-4"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-4"
           >
             {data
               .filter((project) => tabIndex === 0 || project.category === (tabIndex === 1 ? "top" : "mini"))

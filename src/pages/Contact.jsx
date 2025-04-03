@@ -116,7 +116,7 @@ export function Contact() {
       </motion.form>
 
       <p className="mt-8 text-lg text-gray-400">
-        Me contacter directement : <a href="mailto:ionpascal26@gmail.com" className="text-white underline">ionpascal26@gmail.com</a>
+        Me contacter directement : <a href="mailto:ion.pascal@epitech.eu" className="text-white underline">ion.pascal@epitech.eu</a>
       </p>
     </div>
   );

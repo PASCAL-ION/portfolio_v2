@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-import { useMemo } from "react";
+import { useMemo, useEffect, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import { faLocationDot, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import { Link } from "react-router-dom";
 
 export function AboutPerso() {
   const hikingImages = useMemo(() => [
@@ -24,29 +25,50 @@ export function AboutPerso() {
     { src: "/assets/voyages/grotte.jpg", top: "30%", left: "60%", location: "La Grotte de Clamouse" },
     { src: "/assets/voyages/dijon.jpg", top: "60%", left: "70%", location: "Dijon" },
   ], []);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
-    <div className="w-full h-full px-5 pt-5 flex flex-col gap-10 items-start">
-      <div className="relative w-1/2">
+    <div className="w-full h-full px-5 pt-5 flex flex-col md:gap-10 items-start">
+      <div className="relative md:w-1/2 w-full">
         <img src="/assets/mePerso.jpg" alt="Moi" className="w-full h-full object-cover"/>
       </div>
-      <h2 className="text-3xl font-bold w-full text-center">Ce que j'aime c'est...</h2>
-      <ActivitySection title="...me perdre dans le paysage" images={hikingImages} />
-      <ActivitySection title="...m'accrocher aux rochers de Fontainebleau 🤔" images={climbingImages} />
-      <ActivitySection title="...découvrir 🎒" images={travelImages} />
+      <h2 className="text-3xl font-bold w-full text-center my-10 md:my-0">Ce que j'aime c'est...</h2>
+      <ActivitySection title="...me perdre dans le paysage" images={hikingImages} isMobile={isMobile} />
+      <ActivitySection title="...m'accrocher aux rochers de Fontainebleau 🤔" images={climbingImages} isMobile={isMobile} />
+      <ActivitySection title="...découvrir 🎒" images={travelImages} isMobile={isMobile} />
+      <Link
+        to="/"
+        className="flex items-center gap-2 italic font-semibold p-5"
+      >
+        <FontAwesomeIcon icon={faArrowLeft} />
+        Retour
+      </Link>
     </div>
   );
 }
 
-export function ActivitySection({ title, images }) {
+export function ActivitySection({ title, images, isMobile }) {
   return (
     <motion.div
-      className="relative w-full h-screen gap-4"
+      className="relative w-full md:h-screen h-auto gap-4 md:block flex flex-col items-center mb-10 md:mb-0"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <p className="absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] text-center text-2xl text-black font-semibold z-50 bg-white/[.9] rounded-xl p-4">
+      <p className={`${isMobile ? "block" : "absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]"} text-center text-2xl text-black font-semibold z-50 bg-white/[.9] rounded-xl p-4 text-wrap text-lg`}>
         {title}
       </p>
       {images.map((activity, index) => (
@@ -56,23 +78,24 @@ export function ActivitySection({ title, images }) {
           location={activity.location}
           top={activity.top}
           left={activity.left}
+          isMobile={isMobile}
         />
       ))}
     </motion.div>
   );
 }
 
-export function ActivityImage({ src, location, top, left }) {
+export function ActivityImage({ src, location, top, left, isMobile }) {
   return (
     <motion.div
-      className="relative md:absolute md:w-[250px] aspect-square"
+      className="relative md:absolute md:w-[250px] w-[250px] h-[200px] aspect-square mb-4"
       initial={{ opacity: 0, scale: 0.8 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.3 }}
       whileHover={{ scale: 1.1, zIndex: 999 }}
-      style={{ top, left }}
-    >
+      style={isMobile ? { position: "relative", top: "auto", left: "auto" } : { top, left }}
+      >
       <img src={src} alt="" className="w-full h-full object-cover rounded-lg shadow-lg md:opacity-[.2] hover:opacity-[1]" />
       {location ? (
         <div className="absolute bottom-0 right-0 bg-black/[.4] text-white p-1 text-xs rounded-lg">
