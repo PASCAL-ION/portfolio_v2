@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -27,13 +27,13 @@ export function ProjectDetail() {
   }
 
   const settings = {
-    dots: true,               
-    infinite: true,          
-    speed: 500,             
-    slidesToShow: 1,          
-    slidesToScroll: 1,       
-    autoplay: false,          
-    autoplaySpeed: 3000,      
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 3000,
     cssEase: "ease-in-out",
     prevArrow: (
       <div className="absolute left-5 top-1/2 transform -translate-y-1/2 text-white text-3xl bg-black p-3 rounded-full cursor-pointer hover:bg-gray-700">
@@ -44,7 +44,7 @@ export function ProjectDetail() {
       <div className="absolute right-5 top-1/2 transform -translate-y-1/2 text-white text-3xl bg-black p-3 rounded-full cursor-pointer hover:bg-gray-700">
         ❯
       </div>
-    ), 
+    ),
   };
 
   return (
@@ -55,18 +55,20 @@ export function ProjectDetail() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-9xl font-bold"
+            className="md:text-9xl text-5xl font-bold"
           >
             {project.name}
           </motion.h1>
           <div className="flex gap-5">
-            <Link
-              to={project.links.github || "#"}
+            <a
+              href={project.links.github || "#"}
+              target="_blank"
+              rel="noopener noreferrer"
               className={`px-8 py-2 bg-gray-200 rounded-full text-black text-2xl ${!project.links.github ? "text-gray-400 cursor-not-allowed" : ""}`}
               onClick={(e) => !project.links.github && e.preventDefault()}
             >
               <FontAwesomeIcon icon={faGithub} />
-            </Link>
+            </a>
 
             {!project.links.github && (
               <p className="text-sm italic text-gray-500 mt-2">
@@ -74,13 +76,15 @@ export function ProjectDetail() {
               </p>
             )}
 
-            <Link
-              to={project.links.live || "#"}
+            <a
+              href={project.links.live || "#"}
+              target="_blank"
+              rel="noopener noreferrer"
               className={`px-8 py-2 bg-gray-200 rounded-full text-black text-2xl ${!project.links.live ? "text-gray-400 cursor-not-allowed" : ""}`}
               onClick={(e) => !project.links.live && e.preventDefault()}
             >
               <FontAwesomeIcon icon={faGlobe} />
-            </Link>
+            </a>
 
             {!project.links.live && (
               <p className="text-sm italic text-gray-500 mt-2">

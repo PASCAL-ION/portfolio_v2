@@ -49,13 +49,6 @@ export function AboutPerso() {
       <ActivitySection title="...me perdre dans le paysage" images={hikingImages} isMobile={isMobile} />
       <ActivitySection title="...m'accrocher aux rochers de Fontainebleau 🤔" images={climbingImages} isMobile={isMobile} />
       <ActivitySection title="...découvrir 🎒" images={travelImages} isMobile={isMobile} />
-      <Link
-        to="/"
-        className="flex items-center gap-2 italic font-semibold p-5"
-      >
-        <FontAwesomeIcon icon={faArrowLeft} />
-        Retour
-      </Link>
     </div>
   );
 }

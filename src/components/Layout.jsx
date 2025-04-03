@@ -1,10 +1,13 @@
 import { Nav } from "../components/Nav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { faFilePdf, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { Link, useLocation, useNavigate } from "react-router-dom"; 
 
 export function Layout({ children, background }) {
+  const navigate = useNavigate();
+  const location = useLocation();
+
   return (
     <div
       className={`
@@ -53,7 +56,15 @@ export function Layout({ children, background }) {
           </div>
         </div>
         {children}
-        {children}
+        {location.pathname !== "/" && (
+          <Link
+            onClick={() => navigate(-1)}
+            className="flex items-center gap-2 italic font-semibold p-5 cursor-pointer"
+          >
+            <FontAwesomeIcon icon={faArrowLeft} />
+            Retour
+          </Link>
+        )}
       </div>
       <Nav />
     </div>

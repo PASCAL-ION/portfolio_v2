@@ -3,8 +3,11 @@ import { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export function AboutPro() {
+  const navigate = useNavigate();
+
   const webPath = [
     "Autodidacte",
     "OpenclassRooms",
@@ -129,13 +132,6 @@ export function AboutPro() {
             ))}
           </motion.div>
       </div>
-      <Link
-        to="/"
-        className="flex items-center gap-2 italic font-semibold p-5"
-      >
-        <FontAwesomeIcon icon={faArrowLeft} />
-        Retour
-      </Link>
     </div>
   );
 }
