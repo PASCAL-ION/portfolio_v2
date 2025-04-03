@@ -70,7 +70,7 @@
         "name" : "Spotify",
         "description": "Projet de groupe pour reproduire spotify",
         "alt": "image projet clone spotify",
-        "category": "top",
+        "category": "mini",
         "links": {
             "github": "",
             "live": ""
@@ -184,6 +184,196 @@
             },
             "img3": {
                 "src" : "/assets/kasa/home.png",
+                "alt" : ""
+            }
+        }
+    },
+    {
+        "finished" : true,
+        "id": "6",
+        "name" : "Cinema dashboard",
+        "alt": "image projet Cinema dashboard",
+        "category": "top",
+        "description": "Travailler avec une api pour rendre dynamique un site web de e-commerce",
+        "links": {
+            "github": "",
+            "live": ""
+        },
+        "stack": [
+            "test",
+            "test",
+            "test"
+        ],
+        "images": {
+            "img1": {
+                "src" : "/assets/kasa/home.png",
+                "alt" : ""
+            },
+            "img2": {
+                "src" : "/assets/kasa/home.png",
+                "alt" : ""
+            },
+            "img3": {
+                "src" : "/assets/kasa/home.png",
+                "alt" : ""
+            }
+        }
+    },
+    {
+        "finished" : true,
+        "id": "7",
+        "name" : "ToDo list",
+        "alt": "image projet todo list",
+        "category": "mini",
+        "description": "Travailler avec une api pour rendre dynamique un site web de e-commerce",
+        "links": {
+            "github": "",
+            "live": ""
+        },
+        "stack": [
+            "test",
+            "test",
+            "test"
+        ],
+        "images": {
+            "img1": {
+                "src" : "/assets/portfolio/home.png",
+                "alt" : ""
+            },
+            "img2": {
+                "src" : "/assets/portfolio/home.png",
+                "alt" : ""
+            },
+            "img3": {
+                "src" : "/assets/portfolio/home.png",
+                "alt" : ""
+            }
+        }
+    },
+    {
+        "finished" : true,
+        "id": "8",
+        "name" : "Morpion",
+        "alt": "image projet Morpion",
+        "category": "mini",
+        "description": "Travailler avec une api pour rendre dynamique un site web de e-commerce",
+        "links": {
+            "github": "",
+            "live": ""
+        },
+        "stack": [
+            "test",
+            "test",
+            "test"
+        ],
+        "images": {
+            "img1": {
+                "src" : "/assets/portfolio/home.png",
+                "alt" : ""
+            },
+            "img2": {
+                "src" : "/assets/portfolio/home.png",
+                "alt" : ""
+            },
+            "img3": {
+                "src" : "/assets/portfolio/home.png",
+                "alt" : ""
+            }
+        }
+    },
+    {
+        "finished" : true,
+        "id": "9",
+        "name" : "Puissance 4",
+        "alt": "image projet puissance 4",
+        "category": "mini",
+        "description": "J'ai réalisé ce projet en parallele du projet de clone de X. Bien que ce soit un petit projet, j'ai du jongler entre celui-ci et le projet de clone de X améliorant ainsi mes compétences en gestion de temps et en organisation.",
+        "links": {
+            "github": "https://github.com/PASCAL-ION/Puissance4.github.io",
+            "live": "https://pascal-ion.github.io/Puissance4.github.io/"
+        },
+        "stack": [
+            "Javascript modules",
+            "Trello",
+            "Html",
+            "Css"
+        ],
+        "images": {
+            "img1": {
+                "src" : "/assets/puissance4/home.png",
+                "alt" : ""
+            },
+            "img2": {
+                "src" : "/assets/puissance4/game.png",
+                "alt" : ""
+            }
+        }
+    },
+    {
+        "finished" : true,
+        "id": "10",
+        "name" : "Quizz",
+        "alt": "image projet Quizz",
+        "category": "mini",
+        "description": "Travailler avec une api pour rendre dynamique un site web de e-commerce",
+        "links": {
+            "github": "",
+            "live": ""
+        },
+        "stack": [
+            "test",
+            "test",
+            "test"
+        ],
+        "images": {
+            "img1": {
+                "src" : "/assets/portfolio/home.png",
+                "alt" : ""
+            },
+            "img2": {
+                "src" : "/assets/portfolio/home.png",
+                "alt" : ""
+            },
+            "img3": {
+                "src" : "/assets/portfolio/home.png",
+                "alt" : ""
+            }
+        }
+    },
+    {
+        "finished" : true,
+        "id": "11",
+        "name" : "Wysiwyg",
+        "alt": "image projet Wysiwyg",
+        "category": "mini",
+        "description": "Conception d'un éditeur de texte riche en JavaScript, permettant aux utilisateurs de créer et de formater du contenu textuel de manière intuitive.",
+        "stats": {
+            "lines": "200",
+            "team": "4",
+            "duration": "1 weekend"
+        },
+        "links": {
+            "github": "https://github.com/PASCAL-ION/wysiwyg",
+            "live": "https://pascal-ion.github.io/wysiwyg/"
+        },
+        "stack": [
+            "Babel",
+            "Javascript modules",
+            "Trello",
+            "Html",
+            "Css"
+        ],
+        "images": {
+            "img1": {
+                "src" : "/assets/portfolio/home.png",
+                "alt" : ""
+            },
+            "img2": {
+                "src" : "/assets/portfolio/home.png",
+                "alt" : ""
+            },
+            "img3": {
+                "src" : "/assets/portfolio/home.png",
                 "alt" : ""
             }
         }
