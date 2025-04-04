@@ -21,6 +21,9 @@ export function Projects() {
         <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight">
           Mes Projets
         </h1>
+        <p className="italic text-xs mt-4">
+          (Certains projets ne sont pas encore disponibles en ligne, mais je fais le nécessaire pour y remédier. En attendant, j’ai enregistré une courte vidéo sur la page de chaque projet pour les présenter.)
+        </p>
       </div>
 
       <Box className="w-full overflow-x-auto p-4 mb-8 flex justify-center">

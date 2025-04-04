@@ -37,10 +37,10 @@ export default {
         }
       },
       animation: {
-        'scroll-up': 'infinite-scroll-up 7s linear infinite',
-        'scroll-down': 'infinite-scroll-down 7s linear infinite',
-        'scroll-right': 'infinite-scroll-right 7s linear infinite',
-        'scroll-left': 'infinite-scroll-left 7s linear infinite',
+        'scroll-up': 'infinite-scroll-up 20s linear infinite',
+        'scroll-down': 'infinite-scroll-down 20s linear infinite',
+        'scroll-right': 'infinite-scroll-right 20s linear infinite',
+        'scroll-left': 'infinite-scroll-left 20s linear infinite',
       },
     },
   },
