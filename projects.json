@@ -3,12 +3,15 @@
         "finished" : true,
         "id": "1",
         "name": "Clone de X",
-        "shortDescription": "Dans ce projet de groupe nous avons reproduit le reseau social X",
-        "description": "Lors de ce projet d'une durée d'un mois, nous avons développé en équipe de quatre personnes une application web inspirée de X, permettant aux utilisateurs de publier des tweets, de suivre d'autres utilisateurs et d'interagir via des likes et des commentaires.",
         "category": "top",
+        "description": "Lors de ce projet d'une durée d'un mois, nous avons développé en équipe de quatre personnes une application web inspirée de X, permettant aux utilisateurs de publier des tweets, de suivre d'autres utilisateurs et d'interagir via des likes et des commentaires.",
+        "video": "",
+        "stats": {
+            "team": "4",
+            "duration": "1 mois"
+        },
         "links": {
-            "github": "",
-            "live": ""
+            "github": "https://github.com/PASCAL-ION/twitter_clone"
         },
         "stack": [
             "Php",
@@ -17,19 +20,12 @@
             "Tailwind",
             "Mysql",
             "Sql",
-            "Trello"
+            "Trello",
+            "POO MVC"
         ],
         "images": {
             "img1": {
                 "src" : "/assets/twitter/home.png",
-                "alt" : ""
-            },
-            "img2": {
-                "src" : "/assets/spotify/home.png",
-                "alt" : ""
-            },
-            "img3": {
-                "src" : "/assets/meetic/home.png",
                 "alt" : ""
             }
         }
@@ -37,30 +33,31 @@
     {
         "finished" : true,
         "id": "2",
-        "name": "Meetic",
-        "description": "Projet de groupe pour reproduire meetic",
+        "name": "Coup De Crayon",
         "category": "top",
+        "description": "Coup de Crayon est un site de rencontres inspiré de Meetic, avec un design revisité à ma manière. Développé en PHP orienté objet et JavaScript, il permet aux utilisateurs de s’inscrire, de personnaliser leur profil et de rechercher des personnes partageant leurs centres d’intérêt grâce à un système de filtres avancé (genre, ville, loisirs, tranche d’âge). Les résultats s’affichent sous forme d’un carrousel interactif.",
+        "video": "",
+        "stats": {
+            "team": "1",
+            "duration": "2 semaines"
+        },
         "links": {
-            "github": "",
-            "live": ""
+            "github": "https://github.com/PASCAL-ION/coup_de_crayon"
         },
         "stack": [
-            "test",
-            "test",
-            "test"
+            "POO MVC",
+            "Mysql",
+            "Trello",
+            "Php",
+            "Javascript",
+            "Ajax",
+            "css",
+            "Html"
         ],
         "images": {
             "img1": {
                 "src" : "/assets/meetic/home.png",
-                "alt" : ""
-            },
-            "img2": {
-                "src" : "/assets/meetic/home.png",
-                "alt" : ""
-            },
-            "img3": {
-                "src" : "/assets/meetic/home.png",
-                "alt" : ""
+                "alt" : "page de connexion"
             }
         }
     },
@@ -71,6 +68,11 @@
         "description": "Projet de groupe pour reproduire spotify",
         "alt": "image projet clone spotify",
         "category": "mini",
+        "video": "",
+        "stats": {
+            "team": "2",
+            "duration": "1 semaine"
+        },
         "links": {
             "github": "",
             "live": ""
@@ -82,14 +84,6 @@
         ],
         "images": {
             "img1": {
-                "src" : "/assets/spotify/home.png",
-                "alt" : ""
-            },
-            "img2": {
-                "src" : "/assets/spotify/home.png",
-                "alt" : ""
-            },
-            "img3": {
                 "src" : "/assets/spotify/home.png",
                 "alt" : ""
             }
@@ -102,6 +96,10 @@
         "alt": "image projet Kanap",
         "category": "top",
         "description": "Travailler avec une api pour rendre dynamique un site web de e-commerce",
+        "stats": {
+            "team": "1",
+            "duration": "1 mois"
+        },
         "links": {
             "github": "",
             "live": ""
@@ -133,6 +131,10 @@
         "alt": "image projet clone spotify",
         "category": "top",
         "description": "Travailler avec une api pour rendre dynamique un site web de e-commerce",
+        "stats": {
+            "team": "1",
+            "duration": "1 mois"
+        },
         "links": {
             "github": "",
             "live": ""
@@ -164,37 +166,10 @@
         "alt": "image projet clone spotify",
         "category": "top",
         "description": "Travailler avec une api pour rendre dynamique un site web de e-commerce",
-        "links": {
-            "github": "",
-            "live": ""
+        "stats": {
+            "team": "1",
+            "duration": "1 mois"
         },
-        "stack": [
-            "test",
-            "test",
-            "test"
-        ],
-        "images": {
-            "img1": {
-                "src" : "/assets/kasa/home.png",
-                "alt" : ""
-            },
-            "img2": {
-                "src" : "/assets/kasa/home.png",
-                "alt" : ""
-            },
-            "img3": {
-                "src" : "/assets/kasa/home.png",
-                "alt" : ""
-            }
-        }
-    },
-    {
-        "finished" : true,
-        "id": "6",
-        "name" : "Cinema dashboard",
-        "alt": "image projet Cinema dashboard",
-        "category": "top",
-        "description": "Travailler avec une api pour rendre dynamique un site web de e-commerce",
         "links": {
             "github": "",
             "live": ""
@@ -222,30 +197,28 @@
     {
         "finished" : true,
         "id": "7",
-        "name" : "ToDo list",
-        "alt": "image projet todo list",
-        "category": "mini",
-        "description": "Travailler avec une api pour rendre dynamique un site web de e-commerce",
+        "name" : "Panorama",
+        "alt": "image projet Cinema dashboard",
+        "category": "top",
+        "description": "Création d’un site de gestion pour un cinéma, offrant la recherche de films par titre, genre, distributeur ou date de projection. Le site permet également de gérer les abonnements des clients, de consulter leur historique de visionnage et d’y ajouter de nouvelles séances.",
+        "video": "",
+        "stats": {
+            "team": "1",
+            "duration": "2 semaines"
+        },
         "links": {
-            "github": "",
+            "github": "https://github.com/PASCAL-ION/panorama",
             "live": ""
         },
         "stack": [
-            "test",
-            "test",
-            "test"
+            "Php",
+            "Mysql",
+            "Trello",
+            "Structure MVC"
         ],
-        "images": {
+        "images" : {
             "img1": {
-                "src" : "/assets/portfolio/home.png",
-                "alt" : ""
-            },
-            "img2": {
-                "src" : "/assets/portfolio/home.png",
-                "alt" : ""
-            },
-            "img3": {
-                "src" : "/assets/portfolio/home.png",
+                "src" : "/assets/panorama/home.png",
                 "alt" : ""
             }
         }
@@ -253,10 +226,14 @@
     {
         "finished" : true,
         "id": "8",
-        "name" : "Morpion",
-        "alt": "image projet Morpion",
+        "name" : "ToDo list",
+        "alt": "image projet todo list",
         "category": "mini",
         "description": "Travailler avec une api pour rendre dynamique un site web de e-commerce",
+        "stats": {
+            "team": "4",
+            "duration": "1 weekend"
+        },
         "links": {
             "github": "",
             "live": ""
@@ -287,7 +264,11 @@
         "name" : "Puissance 4",
         "alt": "image projet puissance 4",
         "category": "mini",
-        "description": "J'ai réalisé ce projet en parallele du projet de clone de X. Bien que ce soit un petit projet, j'ai du jongler entre celui-ci et le projet de clone de X améliorant ainsi mes compétences en gestion de temps et en organisation.",
+        "description": "J'ai réalisé ce projet en parallèle du développement d'un clone de X. Bien que de taille modeste, ce projet m'a permis de travailler en multitâche et d'améliorer ma gestion du temps ainsi que mon organisation. Jongler entre ces deux projets m'a appris à prioriser mes tâches efficacement et à optimiser mon workflow.",
+        "stats": {
+            "team": "4",
+            "duration": "1 weekend"
+        },
         "links": {
             "github": "https://github.com/PASCAL-ION/Puissance4.github.io",
             "live": "https://pascal-ion.github.io/Puissance4.github.io/"
@@ -316,6 +297,10 @@
         "alt": "image projet Quizz",
         "category": "mini",
         "description": "Travailler avec une api pour rendre dynamique un site web de e-commerce",
+        "stats": {
+            "team": "4",
+            "duration": "1 weekend"
+        },
         "links": {
             "github": "",
             "live": ""
@@ -348,7 +333,6 @@
         "category": "mini",
         "description": "Conception d'un éditeur de texte riche en JavaScript, permettant aux utilisateurs de créer et de formater du contenu textuel de manière intuitive.",
         "stats": {
-            "lines": "200",
             "team": "4",
             "duration": "1 weekend"
         },
@@ -365,15 +349,11 @@
         ],
         "images": {
             "img1": {
-                "src" : "/assets/portfolio/home.png",
+                "src" : "/assets/wysiwyg/home.png",
                 "alt" : ""
             },
             "img2": {
-                "src" : "/assets/portfolio/home.png",
-                "alt" : ""
-            },
-            "img3": {
-                "src" : "/assets/portfolio/home.png",
+                "src" : "/assets/wysiwyg/example.png",
                 "alt" : ""
             }
         }
