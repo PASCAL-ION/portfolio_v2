@@ -25,7 +25,6 @@ export function Projects() {
           (Certains projets ne sont pas encore disponibles en ligne, mais je fais le nécessaire pour y remédier. En attendant, j’ai enregistré une courte vidéo sur la page de chaque projet pour les présenter.)
         </p>
       </div>
-
       <Box className="w-full overflow-x-auto p-4 mb-8 flex justify-center">
         <Tabs
           value={tabIndex}
@@ -40,7 +39,7 @@ export function Projects() {
           variant="scrollable"
           scrollButtons="auto"
         >
-          {["Tous les projets", "Top-projets", "Mini-projets"].map((label, index) => (
+          {["Tous les projets", "Top-projets", "Mini-projets", "Projets en cours"].map((label, index) => (
             <Tab
               key={index}
               label={label}
@@ -69,7 +68,13 @@ export function Projects() {
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-4"
           >
             {data
-              .filter((project) => tabIndex === 0 || project.category === (tabIndex === 1 ? "top" : "mini"))
+              .filter((project) => {
+                if (tabIndex === 0) return project.finished !== false;
+                if (tabIndex === 1) return project.category === "top";
+                if (tabIndex === 2) return project.category === "mini";
+                if (tabIndex === 3) return project.finished === false;
+                return false;
+              })
               .map((project) => (
                 <Card key={project.id} projectDetails={project} />
               ))}

@@ -45,31 +45,30 @@ export function ProjectDetail() {
         {project.name}
       </motion.h1>
       <div className="flex flex-wrap gap-4 md:gap-5 items-center justify-center md:justify-start">
-        <a
-          href={project.links.github || "#"}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`px-6 md:px-8 py-2 bg-gray-200 rounded-full text-black text-lg md:text-2xl ${
-            !project.links.github ? "text-gray-400 cursor-not-allowed" : ""
-          }`}
-          onClick={(e) => !project.links.github && e.preventDefault()}
-        >
-          <FontAwesomeIcon icon={faGithub} />
-        </a>
-        {!project.links.github && (
-          <p className="text-sm italic text-gray-500 mt-2">Bientôt disponible...</p>
-        )}
-        <a
-          href={project.links.live || "#"}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`px-6 md:px-8 py-2 bg-gray-200 rounded-full text-black text-lg md:text-2xl ${
-            !project.links.live ? "hidden" : ""
-          }`}
-          onClick={(e) => !project.links.live && e.preventDefault()}
-        >
-          <FontAwesomeIcon icon={faGlobe} />
-        </a>
+      <a
+  href={project.links.github || "#"}
+  target="_blank"
+  rel="noopener noreferrer"
+  className={`px-6 md:px-8 py-2 bg-black text-white rounded-full text-lg md:text-2xl flex items-center gap-2 transition-transform transform hover:scale-105 ${
+    !project.links.github ? "opacity-50 cursor-not-allowed" : ""
+  }`}
+  onClick={(e) => !project.links.github && e.preventDefault()}
+>
+  <FontAwesomeIcon icon={faGithub} />
+  <span>GitHub</span>
+</a>
+<a
+  href={project.links.live || "#"}
+  target="_blank"
+  rel="noopener noreferrer"
+  className={`px-6 md:px-8 py-2 bg-blue-500 text-white rounded-full text-lg md:text-2xl flex items-center gap-2 transition-transform transform hover:scale-105 ${
+    !project.links.live ? "hidden" : ""
+  }`}
+  onClick={(e) => !project.links.live && e.preventDefault()}
+>
+  <FontAwesomeIcon icon={faGlobe} />
+  <span>Live Site</span>
+</a>
         {!project.links.live && (
           <p className="text-sm italic text-gray-500 mt-2 hidden">Bientôt disponible...</p>
         )}
@@ -145,7 +144,8 @@ export function ProjectDetail() {
       <div className="relative w-full h-[300px] md:h-[500px] lg:h-[600px] overflow-hidden rounded-lg">
         <video
           controls
-          className="w-full h-full object-cover rounded-lg shadow-lg"
+          muted
+          className="w-full h-full object-contain rounded-lg shadow-lg"
         >
           <source src={project.video} type="video/mp4" />
           Your browser does not support the video tag.
