@@ -35,7 +35,7 @@
         "id": "2",
         "name": "Coup De Crayon",
         "category": "top",
-        "description": "Coup de Crayon est un site de rencontres inspiré de Meetic, avec un design revisité à ma manière. Développé en PHP orienté objet et JavaScript, il permet aux utilisateurs de s’inscrire, de personnaliser leur profil et de rechercher des personnes partageant leurs centres d’intérêt grâce à un système de filtres avancé (genre, ville, loisirs, tranche d’âge). Les résultats s’affichent sous forme d’un carrousel interactif.",
+        "description": "Coup de Crayon est un site de rencontres inspiré de Meetic, avec un design revisité à ma manière. Développé en PHP orienté objet et JavaScript, il permet aux utilisateurs de s’inscrire, de personnaliser leur profil et de rechercher des personnes partageant leurs centres d’intérêt grâce à un système de filtres avancé (genre, ville, loisirs, tranche d’âge). Les données sont stockée et recuperées dans une base de données MySql.",
         "video": "",
         "stats": {
             "team": "1",
@@ -65,7 +65,7 @@
         "finished" : false,
         "id": "3",
         "name" : "Spotify",
-        "description": "Projet de groupe pour reproduire spotify",
+        "description": "Création d'une application de streaming musical inspirée de Spotify, permettant aux utilisateurs de rechercher et d'écouter des morceaux de musique. Le projet est en cours de développement et sera mis à jour prochainement.",
         "alt": "image projet clone spotify",
         "category": "mini",
         "video": "",
@@ -78,9 +78,13 @@
             "live": ""
         },
         "stack": [
-            "test",
-            "test",
-            "test"
+            "Docker",
+            "Api",
+            "Nodejs",
+            "Express",
+            "Javascript",
+            "React",
+            "Tailwind"
         ],
         "images": {
             "img1": {
@@ -125,7 +129,7 @@
         }
     },
     {
-        "finished" : false,
+        "finished" : true,
         "id": "5",
         "name" : "Piquante",
         "alt": "image projet clone spotify",
@@ -161,41 +165,6 @@
     },
     {
         "finished" : true,
-        "id": "6",
-        "name" : "Kasa",
-        "alt": "image projet clone spotify",
-        "category": "top",
-        "description": "Travailler avec une api pour rendre dynamique un site web de e-commerce",
-        "stats": {
-            "team": "1",
-            "duration": "1 mois"
-        },
-        "links": {
-            "github": "",
-            "live": ""
-        },
-        "stack": [
-            "test",
-            "test",
-            "test"
-        ],
-        "images": {
-            "img1": {
-                "src" : "/assets/kasa/home.png",
-                "alt" : ""
-            },
-            "img2": {
-                "src" : "/assets/kasa/home.png",
-                "alt" : ""
-            },
-            "img3": {
-                "src" : "/assets/kasa/home.png",
-                "alt" : ""
-            }
-        }
-    },
-    {
-        "finished" : true,
         "id": "7",
         "name" : "Panorama",
         "alt": "image projet Cinema dashboard",
@@ -207,14 +176,13 @@
             "duration": "2 semaines"
         },
         "links": {
-            "github": "https://github.com/PASCAL-ION/panorama",
-            "live": ""
+            "github": "https://github.com/PASCAL-ION/panorama"
         },
         "stack": [
             "Php",
             "Mysql",
             "Trello",
-            "Structure MVC"
+            "MVC"
         ],
         "images" : {
             "img1": {
@@ -229,32 +197,26 @@
         "name" : "ToDo list",
         "alt": "image projet todo list",
         "category": "mini",
-        "description": "Travailler avec une api pour rendre dynamique un site web de e-commerce",
+        "description": "L'application permet aux utilisateurs de créer et supprimer des tâches, ainsi que de les marquer comme terminées. Les taches sont sauvegardées dans une base de données MySql et peuvent être chargées dynamiquement.",
+        "video": "/assets/todo/presentation.mp4",
         "stats": {
-            "team": "4",
-            "duration": "1 weekend"
+            "team": "1",
+            "duration": "2h"
         },
         "links": {
-            "github": "",
-            "live": ""
+            "github": "https://github.com/PASCAL-ION/todoApp_mysql"
         },
         "stack": [
-            "test",
-            "test",
-            "test"
+            "PHP",
+            "Javascript",
+            "Mysql",
+            "Html",
+            "Css"
         ],
         "images": {
             "img1": {
-                "src" : "/assets/portfolio/home.png",
-                "alt" : ""
-            },
-            "img2": {
-                "src" : "/assets/portfolio/home.png",
-                "alt" : ""
-            },
-            "img3": {
-                "src" : "/assets/portfolio/home.png",
-                "alt" : ""
+                "src" : "/assets/todo/home.png",
+                "alt" : "site todo list"
             }
         }
     },
@@ -296,31 +258,29 @@
         "name" : "Quizz",
         "alt": "image projet Quizz",
         "category": "mini",
-        "description": "Travailler avec une api pour rendre dynamique un site web de e-commerce",
+        "description": "Petit projet de quizz en JavaScript, permettant aux utilisateurs de tester leurs connaissances sur divers sujets. L'application utilise l'API fetch pour récupérer les questions et les réponses dans un fichier JSON local.",
         "stats": {
-            "team": "4",
-            "duration": "1 weekend"
+            "team": "1",
+            "duration": "2h"
         },
         "links": {
-            "github": "",
-            "live": ""
+            "github": "https://github.com/PASCAL-ION/Quizz",
+            "live": "https://pascal-ion.github.io/Quizz/"
         },
         "stack": [
-            "test",
-            "test",
-            "test"
+            "Javascript",
+            "Fetch",
+            "Json",
+            "Html",
+            "Css"
         ],
         "images": {
             "img1": {
-                "src" : "/assets/portfolio/home.png",
+                "src" : "/assets/quizz/home.png",
                 "alt" : ""
             },
             "img2": {
-                "src" : "/assets/portfolio/home.png",
-                "alt" : ""
-            },
-            "img3": {
-                "src" : "/assets/portfolio/home.png",
+                "src" : "/assets/quizz/result.png",
                 "alt" : ""
             }
         }
