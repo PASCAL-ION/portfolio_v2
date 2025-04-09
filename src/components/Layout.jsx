@@ -36,7 +36,7 @@ export function Layout({ children, background }) {
               className="md:h-[50px] h-[40px]"
             />
           </Link>
-          <div className="flex gap-3">
+          <div className="flex gap-5">
             <a href="https://github.com/PASCAL-ION" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} className="md:text-3xl text-2xl" />
             </a>
