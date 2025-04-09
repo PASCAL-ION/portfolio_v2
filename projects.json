@@ -134,7 +134,7 @@
         "finished" : true,
         "id": "5",
         "name" : "Piquante",
-        "alt": "image projet clone spotify",
+        "alt": "image projet clone projet piquante",
         "category": "top",
         "description": "Travailler avec une api pour rendre dynamique un site web de e-commerce",
         "stats": {
@@ -316,6 +316,36 @@
             },
             "img2": {
                 "src" : "/assets/wysiwyg/example.png",
+                "alt" : ""
+            }
+        }
+    },
+    {
+        "finished" : false,
+        "id": "12",
+        "name" : "Framework PHP",
+        "description": "Création d'un framework PHP inspiré de Symfony, permettant de développer des applications web en utilisant le modèle MVC. Le projet est en cours de développement et sera mis à jour prochainement.",
+        "alt": "image projet framework",
+        "category": "top",
+        "video": "",
+        "stats": {
+            "team": "1",
+            "duration": "3 semaine"
+        },
+        "links": {
+            "github": "",
+            "live": ""
+        },
+        "stack": [
+            "Php"
+        ],
+        "images": {
+            "img1": {
+                "src" : "/assets/frameworkphp/home.jpg",
+                "alt" : ""
+            },
+            "img2": {
+                "src" : "/assets/frameworkphp/home.jpg",
                 "alt" : ""
             }
         }
