@@ -137,29 +137,20 @@ export function ProjectDetail() {
 
       {/* Carousel or Video Section */}
       <div className="w-full mt-10 relative">
-        {project.video ? (
-          project.video.trim() !== "" ? (
-            // Display video if the "video" key exists and is not empty
-            <div className="relative w-full h-[300px] md:h-[500px] lg:h-[600px] overflow-hidden rounded-lg">
-              <video
-                controls
-                muted
-                className="w-full h-full object-contain rounded-lg shadow-lg"
-              >
-                <source src={project.video} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          ) : (
-            // Display fallback message if the "video" key is empty
-            <div className="relative w-full h-[300px] md:h-[500px] lg:h-[600px] flex items-center justify-center bg-gray-200 rounded-lg shadow-lg">
-              <p className="text-lg md:text-2xl font-semibold text-gray-500">
-                Vidéo en cours de réalisation
-              </p>
-            </div>
-          )
+        {project.video && project.video.trim() !== "" ? (
+          // Display video if the "video" key exists and is not empty
+          <div className="relative w-full h-[300px] md:h-[500px] lg:h-[600px] overflow-hidden rounded-lg">
+            <video
+              controls
+              muted
+              className="w-full h-full object-contain rounded-lg shadow-lg"
+            >
+              <source src={project.video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         ) : Object.keys(project.images).length > 1 ? (
-          // Display carousel if there are more than 1 image and no video
+          // Display carousel if there are more than 1 image and no valid video
           <div className="relative w-full h-[300px] md:h-[500px] lg:h-[600px] overflow-hidden rounded-lg">
             <motion.div
               key={currentSlide}
@@ -189,7 +180,7 @@ export function ProjectDetail() {
             </button>
           </div>
         ) : (
-          // Display fallback message if there is only one image and no video
+          // Display fallback message if there is only one image and no valid video
           <div className="relative w-full h-[300px] md:h-[500px] lg:h-[600px] flex items-center justify-center bg-gray-200 rounded-lg shadow-lg">
             <p className="text-lg md:text-2xl font-semibold text-gray-500">
               Vidéo en cours de réalisation

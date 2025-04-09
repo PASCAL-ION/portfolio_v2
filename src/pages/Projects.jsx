@@ -86,10 +86,10 @@ export function Projects() {
             >
               {data
                 .filter((project) => {
-                  if (tabIndex === 0) return project.finished !== false;
-                  if (tabIndex === 1) return project.category === "top";
-                  if (tabIndex === 2) return project.category === "mini";
-                  if (tabIndex === 3) return project.finished === false;
+                  if (tabIndex === 0) return project.finished !== false; // All finished projects
+                  if (tabIndex === 1) return project.category === "top" && project.finished !== false; // Top projects that are finished
+                  if (tabIndex === 2) return project.category === "mini" && project.finished !== false; // Mini projects that are finished
+                  if (tabIndex === 3) return project.finished === false; // Unfinished projects
                   return false;
                 })
                 .map((project) => (
