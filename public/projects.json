@@ -121,11 +121,11 @@
                 "alt" : ""
             },
             "img2": {
-                "src" : "/assets/kanap/home.png",
+                "src" : "/assets/kanap/cart.png",
                 "alt" : ""
             },
             "img3": {
-                "src" : "/assets/kanap/home.png",
+                "src" : "/assets/kanap/product.png",
                 "alt" : ""
             }
         }
