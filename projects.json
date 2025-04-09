@@ -35,7 +35,7 @@
         "id": "2",
         "name": "Coup De Crayon",
         "category": "top",
-        "description": "Coup de Crayon est un site de rencontres inspiré de Meetic, avec un design revisité à ma manière. Développé en PHP orienté objet et JavaScript, il permet aux utilisateurs de s’inscrire, de personnaliser leur profil et de rechercher des personnes partageant leurs centres d’intérêt grâce à un système de filtres avancé (genre, ville, loisirs, tranche d’âge). Les données sont stockée et recuperées dans une base de données MySql.",
+        "description": "Coup de Crayon est un site de rencontres inspiré de Meetic, avec un design revisité à ma manière. Développé en PHP orienté objet et JavaScript, il permet aux utilisateurs de s’inscrire, de personnaliser leur profil et de rechercher des personnes partageant leurs centres d’intérêt grâce à un système de filtres (genre, ville, loisirs, tranche d’âge). Les données sont stockée et recuperées depuis une base de données MySql.",
         "video": "",
         "stats": {
             "team": "1",
@@ -99,19 +99,21 @@
         "name" : "Kanap",
         "alt": "image projet Kanap",
         "category": "top",
-        "description": "Travailler avec une api pour rendre dynamique un site web de e-commerce",
+        "description": "Dans ce projet de e-commerce, j'ai conçu une api CRUD pour une application de vente de canapés en ligne. Le site permet aux utilisateurs de parcourir les produits, d'ajouter des articles à leur panier et de passer commande. Le projet a été développé en JavaScript et utilise une API ainsi que le localstorage pour gérer les données des produits.",
         "stats": {
             "team": "1",
-            "duration": "1 mois"
+            "duration": "3 semaines"
         },
         "links": {
-            "github": "",
-            "live": ""
+            "github": "https://github.com/PASCAL-ION/Kanap",
+            "live": "https://kanap-live-59705036048.europe-west1.run.app/"
         },
         "stack": [
-            "test",
-            "test",
-            "test"
+            "Javascript",
+            "API CRUD",
+            "Localstorage",
+            "Nodejs",
+            "Express"
         ],
         "images": {
             "img1": {
