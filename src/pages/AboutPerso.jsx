@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useMemo, useEffect, useState } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLocationDot, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
 
 export function AboutPerso() {
@@ -26,6 +26,7 @@ export function AboutPerso() {
     { src: "/assets/voyages/dijon.jpg", top: "60%", left: "70%", location: "Dijon" },
   ], []);
   const [isMobile, setIsMobile] = useState(false);
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -41,9 +42,24 @@ export function AboutPerso() {
   }, []);
 
   return (
-    <div className="w-full h-full px-5 pt-5 flex flex-col md:gap-10 items-start">
+    <div className="w-full h-full px-5 pt-5 flex flex-col md:gap-10 items-center">
       <div className="relative md:w-1/2 w-full">
-        <img src="/assets/mePerso.jpg" alt="Moi" className="w-full h-full object-cover"/>
+        {!isImageLoaded && (
+          <motion.div
+            className="absolute top-0 left-0 w-full h-full bg-gray-300 animate-pulse rounded-lg"
+            initial={{ opacity: 1 }}
+            animate={{ opacity: isImageLoaded ? 0 : 1 }}
+            transition={{ duration: 0.5 }}
+          />
+        )}
+        <img
+          src="/assets/mePerso.jpg"
+          alt="Moi"
+          className={`w-full h-full object-cover rounded-lg transition-opacity duration-500 ${
+            isImageLoaded ? "opacity-100" : "opacity-0"
+          }`}
+          onLoad={() => setIsImageLoaded(true)}
+        />
       </div>
       <h2 className="text-3xl font-bold w-full text-center my-10 md:my-0">Ce que j'aime c'est...</h2>
       <ActivitySection title="...me perdre dans le paysage" images={hikingImages} isMobile={isMobile} />

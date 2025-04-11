@@ -22,7 +22,7 @@ export function TextCaroussel({ wordArray, direction, linkTo }) {
     >
       <Link to={linkTo}>
         <div
-          className={`flex ${flexDirection} border-l border-b border-white text-white hover:text-black cursor-pointer ${animationClass}`}
+          className={`flex ${flexDirection} border border-white text-white hover:text-black cursor-pointer ${animationClass}`}
         >
           {[...wordArray, ...wordArray, ...wordArray, ...wordArray, ...wordArray].map((letter, index) => (
             <p
