@@ -136,7 +136,7 @@
         "name" : "Piquante",
         "alt": "image projet clone projet piquante",
         "category": "top",
-        "description": "Travailler avec une api pour rendre dynamique un site web de e-commerce",
+        "description": "Piquante est un une application permettant de partager des sauces piquantes. Les utilisateurs peuvent s'inscrire, se connecter, ajouter des sauces, et interagir avec d'autres utilisateurs.",
         "stats": {
             "team": "1",
             "duration": "1 mois"
@@ -146,9 +146,11 @@
             "live": ""
         },
         "stack": [
-            "test",
-            "test",
-            "test"
+            "MongoDB",
+            "NodeJS",
+            "Express",
+            "Javascript",
+            "API CRUD"
         ],
         "images": {
             "img1": {

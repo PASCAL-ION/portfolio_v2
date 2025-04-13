@@ -55,6 +55,15 @@ export function Layout({ children, background }) {
             </button>
           </div>
         </div>
+        {location.pathname !== "/" && (
+          <Link
+            onClick={() => navigate(-1)}
+            className="flex items-center gap-2 italic font-semibold p-5 cursor-pointer"
+          >
+            <FontAwesomeIcon icon={faArrowLeft} />
+            Retour
+          </Link>
+        )}
         {children}
         {location.pathname !== "/" && (
           <Link
