@@ -4,7 +4,7 @@ import pngquant from 'imagemin-pngquant';
 import path from 'path';
 import fs from 'fs/promises';
 
-const sourceDir = 'src/assets';
+const sourceDir = 'public/assets';
 
 const getImageFiles = async (dir) => {
   const entries = await fs.readdir(dir, { withFileTypes: true });
