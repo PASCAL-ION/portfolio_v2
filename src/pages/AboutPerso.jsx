@@ -61,7 +61,7 @@ export function AboutPerso() {
         />
       </div>
       <h2 className="text-3xl font-bold w-full text-center my-10 md:my-0">Ce que j'aime c'est...</h2>
-      <ActivitySection title="...me perdre dans le paysage" images={hikingImages} isMobile={isMobile} />
+      <ActivitySection title="...me fondre dans la nature" images={hikingImages} isMobile={isMobile} />
       <ActivitySection title="...m'accrocher aux rochers de Fontainebleau 🤔" images={climbingImages} isMobile={isMobile} />
       <ActivitySection title="...découvrir 🎒" images={travelImages} isMobile={isMobile} />
     </div>

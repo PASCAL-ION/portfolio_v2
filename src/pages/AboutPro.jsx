@@ -63,16 +63,17 @@ export function AboutPro() {
 
       <div className="w-3/4 text-center w-full mt-10">
         <p className="text-lg mt-4">
-        <span className="bg-slate-400 text-black px-1">Développeur fullstack junior</span>, j’aime me confronter à l’inconnu. Ce qui me motive le plus, c’est d’apprendre en faisant — surtout quand je ne maîtrise pas encore totalement le terrain. Pour moi, les progrès réels viennent lorsque les défis sont les plus difficiles.
+          <span className="bg-slate-400 text-black px-1">Développeur fullstack junior</span>, j’aime me confronter à l’inconnu. Ce qui me motive le plus, c’est d’apprendre en faisant — surtout quand je ne maîtrise pas encore totalement le terrain. Pour moi, les progrès réels viennent lorsque les défis sont les plus difficiles.
           <br />
           <br />
           Ce qui me passionne dans le développement web, c’est que rien n’est figé. Les technologies évoluent, les pratiques changent, et il y a toujours quelque chose de nouveau à découvrir ou à expérimenter. C’est un terrain de jeu parfait pour ceux qui aiment apprendre.
           <br />
           <br />
-          <span className="font-bold">Mon objectif</span> : trouver une <span className="bg-slate-400 text-black px-1">alternance de 14 mois à partir de septembre 2025</span> pour apprendre encore plus vite, progresser au contact de développeurs expérimentés et contribuer à des projets qui font vraiment monter en compétence.
+          <span className="font-bold">Mon objectif</span> : trouver une <span className="bg-slate-400 text-black px-1">alternance de 14 mois à partir du 15 septembre 2025</span> pour apprendre encore plus vite, progresser au contact de développeurs expérimentés et contribuer à des projets qui font vraiment monter en compétence.
           <br />
           <br />
-          <span className="font-bold">Ce que je cherche avant tout</span> : une équipe de développeurs qui codent pour offrir une application de qualité, bien construite et pensée à long terme. Je souhaite m'imprégner de méthodes de travail rigoureuses, axées sur la durabilité.</p>
+          <span className="font-bold">Ce que je cherche avant tout</span> : une équipe de développeurs qui codent pour offrir une application de qualité, bien construite et pensée à long terme. Je souhaite m’imprégner de méthodes de travail rigoureuses, axées sur la durabilité.
+        </p>
       </div>
 
       <div className="w-full text-center mt-10">
