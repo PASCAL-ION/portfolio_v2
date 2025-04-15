@@ -4,7 +4,7 @@
         "id": "1",
         "name": "Clone de X",
         "category": "top",
-        "description": "Lors de ce projet d'une durée d'un mois, nous avons développé en équipe de quatre personnes une application web inspirée de X, permettant aux utilisateurs de publier des tweets, de suivre d'autres utilisateurs et d'interagir via des likes et des commentaires.",
+        "description": "Lors de ce projet d’un mois, nous avons développé, en équipe de quatre personnes, une application web inspirée de X, permettant aux utilisateurs de publier des tweets, de suivre d’autres utilisateurs et d’interagir via des likes et des commentaires.",
         "video": "",
         "stats": {
             "team": "4",
@@ -35,7 +35,7 @@
         "id": "2",
         "name": "Coup De Crayon",
         "category": "top",
-        "description": "Coup de Crayon est un site de rencontres inspiré de Meetic, avec un design revisité à ma manière. Développé en PHP orienté objet et JavaScript, il permet aux utilisateurs de s’inscrire, de personnaliser leur profil et de rechercher des personnes partageant leurs centres d’intérêt grâce à un système de filtres (genre, ville, loisirs, tranche d’âge). Les données sont stockée et recuperées depuis une base de données MySql.",
+        "description": "Coup de Crayon est un site de rencontres inspiré de Meetic, avec un design revisité à ma manière. Développé en PHP orienté objet et JavaScript, il permet aux utilisateurs de s’inscrire, de personnaliser leur profil et de rechercher des personnes partageant leurs centres d’intérêt grâce à un système de filtres (genre, ville, loisirs, tranche d’âge). Les données sont stockées et récupérées depuis une base de données MySQL.",
         "video": "",
         "stats": {
             "team": "1",
@@ -99,7 +99,7 @@
         "name" : "Kanap",
         "alt": "image projet Kanap",
         "category": "top",
-        "description": "Dans ce projet de e-commerce, j'ai utilisé une api pour rendre une application de vente de canapés dynamique. Le site permet aux utilisateurs de parcourir les produits, d'ajouter des articles à leur panier et de passer commande. Le projet a été développé en JavaScript et utilise une API ainsi que le localstorage pour gérer les données des produits.",
+        "description": "Dans ce projet de e-commerce, j’ai utilisé une API pour rendre une application de vente de canapés dynamique. Le site permet aux utilisateurs de parcourir les produits, d’ajouter des articles à leur panier et de passer commande. Le projet a été développé en JavaScript et utilise une API ainsi que le localStorage pour gérer les données des produits.",
         "stats": {
             "team": "1",
             "duration": "3 semaines"
@@ -136,7 +136,7 @@
         "name" : "Piquante",
         "alt": "image projet clone projet piquante",
         "category": "top",
-        "description": "Piquante est un une application permettant de partager des sauces piquantes. Les utilisateurs peuvent s'inscrire, se connecter, ajouter des sauces, et interagir avec d'autres utilisateurs.",
+        "description": "Piquante est une application permettant de partager des sauces piquantes. Les utilisateurs peuvent s’inscrire, se connecter, ajouter des sauces et interagir avec d’autres utilisateurs.",
         "stats": {
             "team": "1",
             "duration": "1 mois"
@@ -198,10 +198,10 @@
     {
         "finished" : true,
         "id": "8",
-        "name" : "ToDo list",
+        "name" : "To Do List",
         "alt": "image projet todo list",
         "category": "mini",
-        "description": "L'application permet aux utilisateurs de créer et supprimer des tâches, ainsi que de les marquer comme terminées. Les taches sont sauvegardées dans une base de données MySql et peuvent être chargées dynamiquement.",
+        "description": "L'application permet aux utilisateurs de créer et supprimer des tâches, ainsi que de les marquer comme terminées. Les tâches sont sauvegardées dans une base de données MySQL et peuvent être chargées dynamiquement.",
         "video": "/assets/todo/presentation.mp4",
         "stats": {
             "team": "1",
@@ -230,7 +230,7 @@
         "name" : "Puissance 4",
         "alt": "image projet puissance 4",
         "category": "mini",
-        "description": "J'ai réalisé ce projet en parallèle du développement d'un clone de X. Bien que de taille modeste, ce projet m'a permis de travailler en multitâche et d'améliorer ma gestion du temps ainsi que mon organisation. Jongler entre ces deux projets m'a appris à prioriser mes tâches efficacement et à optimiser mon workflow.",
+        "description": "J'ai réalisé ce projet en parallèle du développement d'un clone de X. Bien que de taille modeste, ce projet m'a permis de travailler en multitâche et d'améliorer ma gestion du temps ainsi que mon organisation. Jongler entre ces deux projets m'a appris à prioriser mes tâches de manière efficace et à optimiser mon workflow.",
         "stats": {
             "team": "4",
             "duration": "1 weekend"
@@ -262,7 +262,7 @@
         "name" : "Quizz",
         "alt": "image projet Quizz",
         "category": "mini",
-        "description": "Petit projet de quizz en JavaScript, permettant aux utilisateurs de tester leurs connaissances sur divers sujets. L'application utilise l'API fetch pour récupérer les questions et les réponses dans un fichier JSON local.",
+        "description": "Ce projet est un quiz réalisé en JavaScript, permettant aux utilisateurs de tester leurs connaissances sur divers sujets. L'application utilise l'API fetch pour récupérer les questions et les réponses dans un fichier JSON local.",
         "stats": {
             "team": "1",
             "duration": "2h"
@@ -339,7 +339,8 @@
             "live": ""
         },
         "stack": [
-            "Php"
+            "Php",
+            "Apache"
         ],
         "images": {
             "img1": {
